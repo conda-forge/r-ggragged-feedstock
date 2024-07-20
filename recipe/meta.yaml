@@ -1,6 +1,5 @@
 {% set version = '0.1.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ggragged
@@ -13,8 +12,7 @@ source:
   sha256: 35d9aebed0dd4c443198c978b82685fad3f8b9a5895fe9ee3c5e684b35fe179e
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
